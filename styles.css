@@ -110,3 +110,47 @@ footer i {
 .contact-info {
     margin-bottom: 10px; /* Space above the copyright text */
 }
+#classes {
+    background-color: #f8f9fa; /* Light background to make the section stand out */
+    border-radius: 8px; /* Adds rounded corners */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+#classes h2 {
+    color: #0056b3; /* A strong color for headings */
+    text-align: center; /* Centering the heading */
+}
+
+#classes ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+#classes li {
+    background: #ffffff; /* White background for each list item */
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 5px solid #007bff; /* Adds a blue left border for a pop of color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for each item */
+}
+
+#classes li strong {
+    color: #343a40; /* Dark color for emphasis on course names */
+}
+
+#classes li:hover {
+    background-color: #f0f0f0; /* Light grey background on hover for interactive feel */
+}
+#classes li {
+    background: #ffffff; /* White background for each list item */
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 5px solid #007bff; /* Adds a blue left border for a pop of color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for each item */
+}
+
+#classes li:hover {
+    background-color: #f0f0f0; /* Light grey background on hover for interactive feel */
+}
