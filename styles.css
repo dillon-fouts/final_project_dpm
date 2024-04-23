@@ -4,49 +4,109 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Soft neutral background for easy reading */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background: #000000; /* Bold black header */
+    color: #FFCD00; /* Vibrant gold text */
+    padding: 20px 20px;
     text-align: center;
+    border-bottom: 5px solid #FFCD00; /* Gold border for distinction */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin: 0 20px; /* More space between links */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #FFCD00;
     text-decoration: none;
+    padding: 10px 15px;
+    background: #333333; /* Slightly lighter black for contrast */
+    border-radius: 10px; /* More pronounced rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #FFCD00;
+    color: #000000;
+    font-weight: bold; /* Make text bold on hover/active for emphasis */
 }
 
 section {
     padding: 20px;
-    margin: 0 10px;
-    background: white;
+    margin: 20px 10px;
+    background: #FFFFFF;
     border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 footer {
     text-align: center;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    padding: 20px 20px;
+    background: #333333; /* Consistent footer color */
+    color: #FFCD00;
+    border-top: 5px solid #FFCD00; /* Matching border like header */
+}
+
+/* Enhance visual impact with icons */
+nav ul li a:before {
+    content: "\2022"; /* Bullet symbol */
+    color: #FFCD00;
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Responsive Design: Adjustments for small screens */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+    }
+    nav ul li a {
+        display: block;
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px 20px;
+    background: #333333; /* Consistent footer color */
+    color: #FFCD00;
+    border-top: 5px solid #FFCD00; /* Stylish top border */
+}
+
+footer a {
+    color: #FFCD00; /* Gold text for links */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Space out links */
+}
+
+footer a:hover {
+    color: #FFFFFF; /* White color on hover for contrast */
+}
+
+footer i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.contact-info {
+    margin-bottom: 10px; /* Space above the copyright text */
 }
