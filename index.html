@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dillon Fouts Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <!-- Cookie Popup Stylesheet -->
-        <link rel="stylesheet" href="cookie-popup.css">
-        <!-- Including Font Awesome for icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <!-- Cookie Popup Start -->
-        <div id="cookie-popup" class="cookie-popup">
-            <p>By using this site you agree to the storing of cookies on your device to enhance site navigation and to analyze site usage. Learn more about our <a href="cookie-policy.html">cookie policy.</a></p>
-            <button id="accept-cookies">Accept</button>
-        </div>
-        <!-- Cookie Popup End -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dillon Fouts Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Cookie Popup Stylesheet -->
+    <link rel="stylesheet" href="cookie-popup.css">
     <!-- Including Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Optionally add Google Analytics tracking code here -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQXRLW1WYQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EQXRLW1WYQ');
+    </script>
 </head>
 <body>
+    <!-- Cookie Popup Start -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>By using this site you agree to the storing of cookies on your device to enhance site navigation and to analyze site usage. Learn more about our <a href="cookie-policy.html">cookie policy</a>.</p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+    <!-- Cookie Popup End -->
+
     <header>
         <h1>Dillon Fouts</h1>
         <nav>
@@ -48,7 +49,6 @@
 
     <footer>
         <div class="contact-info">
-            <!-- Assuming you have contact icons or info here -->
             <a href="mailto:foutsfinances@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/dillon-fouts/"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/dillon-fouts" target="_blank"><i class="fab fa-github"></i></a>
@@ -60,15 +60,6 @@
         </div>
         <p>Content © Dillon Fouts 2024</p>
     </footer>
-
-    <!-- Optionally add Google Analytics tracking code here -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQXRLW1WYQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-EQXRLW1WYQ');
-    </script>
+    <script src="cookie-popup.js"></script>
 </body>
 </html>
