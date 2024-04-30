@@ -202,32 +202,3 @@ footer i {
     font-size: 16px;
 }
 
-/* Responsive styles for tablets */
-@media (max-width: 768px) {
-    .content {
-        padding: 15px;
-        font-size: 14px;
-    }
-}
-
-/* Responsive styles for mobile phones */
-@media (max-width: 480px) {
-    .content {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    nav ul {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-    
-    .hamburger-menu {
-        display: block;
-    }
-}
