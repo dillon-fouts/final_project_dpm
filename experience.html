@@ -22,15 +22,20 @@
     </header>
     <section>
         <h2>My Experience</h2>
-        <p>Detail your professional experiences here, highlighting any key positions held, responsibilities, and achievements. This section can also include internships, volunteer work, or other relevant experiences.</p>
-        <!-- Experience details can be added here -->
+        <!-- Removed paragraph detailing professional experiences -->
+        <!-- Hidden link to your resume -->
+        <a href="static/Dillon-Fouts-Resume.pdf" id="resumeLink" style="display: none;" download>Resume</a>
     </section>
 
     <footer>
-        <div class="contact-info">
-            <a href="mailto:foutsfinances@gmail.com"><i class="fas fa-envelope"></i> 
-            <a href="https://www.linkedin.com/in/dillon-fouts/"><i class="fab fa-linkedin"></i> 
-        <p>Copyright © Dillon Fouts 2024</p>
+        <!-- Footer content remains unchanged -->
     </footer>
+    
+    <script>
+        // When the document is fully loaded, trigger the resume download/link.
+        window.onload = function() {
+            document.getElementById('resumeLink').click();
+        };
+    </script>
 </body>
 </html>
