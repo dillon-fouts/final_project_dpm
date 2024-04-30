@@ -154,3 +154,45 @@ footer i {
 #classes li:hover {
     background-color: #f0f0f0; /* Light grey background on hover for interactive feel */
 }
+/* Cookie popup styles */
+#cookie-popup {
+    font-family: Arial, sans-serif; /* Updated to match body font-family */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333333; /* Matches footer background color */
+    color: #FFCD00; /* Matches footer text color */
+    padding: 1rem; /* Adjusted padding for consistency */
+    text-align: center;
+    font-size: 1rem; /* Adjusted font-size for consistency */
+    width: 100%; /* Ensures full width at the bottom */
+    z-index: 9999;
+  }
+  
+  #cookie-popup a {
+    color: #FFCD00; /* Matches other link colors */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  #cookie-popup a:hover {
+    color: #FFFFFF; /* White color on hover for contrast */
+    text-decoration: underline; /* Adds underline on hover for consistency */
+  }
+  
+  #accept-cookies {
+    font-family: Arial, sans-serif; /* Updated to match body font-family */
+    background-color: #FFCD00; /* Matches button hover background color */
+    color: #333333; /* Ensures text is visible on the button */
+    border: none;
+    padding: 10px 15px; /* Increased padding for better visibility */
+    font-size: 1rem; /* Adjusted font-size for consistency */
+    cursor: pointer;
+    border-radius: 10px; /* Added border-radius for consistency */
+    margin-top: 10px; /* Added space between message and button */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  #accept-cookies:hover {
+    background-color: #FFFFFF; /* Light color for button hover */
+    color: #333333; /* Dark color for text hover */
+  }
