@@ -37,14 +37,119 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>My Projects</h2>
-        <p>I will be updating with projects I have completed during my academic career. </p>
-        <!-- Project descriptions can be added here -->
+    <style>
+        .project-image {
+            text-align: center; /* Centers the content inside the figure */
+            margin-bottom: 20px; /* Adds space below each figure */
+        }
+        .project-image img {
+            display: block; /* Makes the image a block element */
+            margin: auto; /* Centers the image horizontally within its container */
+            max-width: 80%; /* Optional: limits the image width to 80% of its container */
+            height: auto; /* Maintains aspect ratio */
+        }
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px; /* Adds a little space above the caption */
+        }
+    </style>
+    
+    <style>
+        .project-header {
+            color: #FFCD00; /* Gold text */
+            background-color: #333; /* Black background */
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .project-button {
+            color: #000; /* Black text */
+            background-color: #FFCD00; /* Gold background */
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block; /* Ensures proper padding and spacing */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+    
+        .project-button:hover {
+            background-color: #FFFFFF; /* White background on hover */
+            color: #333; /* Black text on hover */
+        }
+    
+        .content {
+            padding: 20px;
+            background-color: #FFFFFF;
+            margin: 20px 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+    
+    <header id="projects-header">
+        <h2 class="project-header">Portfolio of Key Projects</h2>
+        <p>Discover the various academic and professional projects that have shaped my expertise in data analysis, database design, and software development.</p>
+    </header>
+    
+    
+    <section id="ml-salary-predictor-project" class="content">
+        <h2 style="color: #FFCD00; background-color: #333; padding: 10px; text-align: center;">Machine Learning Salary Predictor</h2>
+        <p>This project, completed in collaboration with my classmate Tyler Noga for our Digital Product Management class, involved developing a web application that utilizes machine learning to estimate salary ranges for various technical and data-related roles.</p>
+        <p>The application targets professions such as Data Analysts, Data Engineers, and Software Engineers, providing them with valuable salary insights. This tool is designed to help professionals in the tech industry make informed career decisions based on potential earnings.</p>
+        <p>We are proud of the practical experience gained in web development and AI technologies through this project.</p>
+        <a href="https://fouts-noga-frontend.azurewebsites.net/" target="_blank" style="color: #000; background-color: #FFCD00; padding: 10px 15px; text-decoration: none; border-radius: 10px; font-weight: bold; transition: background-color 0.3s, color 0.3s;">Check out the Machine Learning Salary Predictor App</a>
     </section>
-    <section>
-        <h2>Classes Taken</h2>
+    
+    <section id="marketplace-simulation-project" class="content">
+        <h2 class="project-header">Marketplace Simulation Certification</h2>
+        <p>As part of my academic growth and practical business training, I successfully completed a Marketplace Simulation, earning recognition among the top performers worldwide. This simulation is a valuable tool for understanding the complexities of managing a business in a competitive environment.</p>
+        <p>This hands-on experience allowed me to apply business theories in a simulated marketplace, developing skills in strategic planning, financial analysis, and operational management. Achieving a place in the top 10% worldwide and earning the 1st Place Team badge stands as a testament to my and my team's dedication and understanding of effective business strategies.</p>
+        <!-- If you have an image of the certificate or badge -->
+        <figure class="project-image">
+            <img src="static/top 10 percent of simulations.png" alt="Marketplace Simulation Certificate">
+            <figcaption>Certificate of Achievement in Marketplace Simulation</figcaption>
+        </figure>
+    </section>   
+    
+    <section id="airbnb-project" class="content">
+        <h2 class="project-header">Airbnb Prices and their Neighborhoods</h2>
+        <p>An analytical project exploring the impact of neighborhood demographics and property features on Airbnb pricing across the United States.</p>
+        <h3>Key Insights:</h3>
         <ul>
+            <li>Identified a positive correlation between state median income and Airbnb pricing.</li>
+            <li>Room type and property amenities significantly affect listing prices.</li>
+            <li>Detailed demographic analysis to understand pricing variations across cities.</li>
+        </ul>
+        <h3>Visual Data Representations:</h3>
+        <figure class="project-image">
+            <img src="static/top 5 cities based on average airbnb price.png" alt="Chart of Top 5 Cities Based on Average Airbnb Price">
+            <figcaption>Figure 1: Top 5 Cities Based on Average Airbnb Price</figcaption>
+        </figure>
+        <figure class="project-image">
+            <img src="static/regression of property type.png" alt="Regression Analysis of Property Type Pricing">
+            <figcaption>Figure 2: Regression Analysis of Property Type Pricing</figcaption>
+        </figure>
+        <h3>Methodology:</h3>
+        <p>Data was sourced from publicly available Airbnb listings, U.S. demographic data, and state income levels. Extensive data cleaning and analysis were performed using R programming.</p>
+        <a href="static/Final Project Data Wrangling.pdf" class="project-button" download>Download Full Report</a>
+        <section id="college-majors-database-project" class="content">
+            <h2 class="project-header">College Majors Database Project</h2>
+            <p>In collaboration with Megan Mullarkey, Tyler Noga, Allison Hersom, and Lucas Hayes, I contributed to the creation of a web-based database application aimed at guiding individuals through the selection of college majors based on post-graduate employment data and salary expectations.</p>
+            <p>The project leveraged a dataset from the “The Economic Guide to Picking a College Major” and included comprehensive data on 173 majors. This data encompassed employment statistics, median salaries, and other crucial metrics, transformed into a searchable, user-friendly database interface.</p>
+            <p>Through meticulous data normalization, ER diagramming, and SQL schema design, we built a platform that not only provided key insights into career prospects but also honed our skills in database management and application development.</p>
+            <p>Although the web application is not currently hosted online, the project was a pivotal experience in practical database application and user interface design. Below, you can find materials related to the project, including our final report and visual aids that outline the database's structure and functionality.</p>
+            <!-- If you have a final report PDF or images -->
+            <a href="static/Database Final Project Report.pdf" class="project-button" download>Download Final Project Report</a>
+            <figure class="project-image">
+                <img src="static/landing page final database project.png" alt="Database Application Screenshot">
+                <figcaption>Figure: Screenshot of the College Majors Database Interface</figcaption>
+            </figure>
+        </section>    
+    <section id="classes-taken" class="content">
+    <h2 class="project-header">Classes Taken</h2>
+    <ul>
             <li><strong>Business Analytics:</strong> Techniques and tools for analyzing and interpreting big data in business.</li>
             <li><strong>Entrepreneurial Management:</strong> Essentials of starting, managing, and growing new business ventures.</li>
             <li><strong>Business Computing Essentials:</strong> Proficiency in business software for word processing, spreadsheets, presentations, and databases.</li>

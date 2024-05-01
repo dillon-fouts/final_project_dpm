@@ -202,3 +202,20 @@ footer i {
     font-size: 16px;
 }
 
+#projects-header {
+    background: #333333; /* Lighter black/grey background */
+    color: #FFCD00; /* Vibrant gold text */
+    padding: 20px 20px;
+    text-align: center;
+    border-bottom: 5px solid #FFCD00; /* Gold border for distinction */
+}
+
+.project-header {
+    margin: 0;
+    font-size: 1.75em; /* Slightly reduced font size from h1 */
+}
+
+#projects-header p {
+    font-size: 1em; /* Standard text size for subtext */
+    color: #FFCD00; /* Maintaining gold for readability */
+}
