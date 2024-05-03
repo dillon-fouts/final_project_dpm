@@ -1,2 +1,2 @@
 # final_project_dpm
- Final project portfolio 
+Personal portfolio website featuring projects and professional resume, created as part of a class project.

@@ -219,3 +219,22 @@ footer i {
     font-size: 1em; /* Standard text size for subtext */
     color: #FFCD00; /* Maintaining gold for readability */
 }
+
+/* Base styles */
+.pdf-viewer {
+    display: block; /* Ensure it's visible by default */
+}
+
+.mobile-button {
+    display: none; /* Hidden by default */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .pdf-viewer {
+        display: none; /* Hide the PDF viewer on small screens */
+    }
+    .mobile-button {
+        display: block; /* Show the mobile button on small screens */
+    }
+}
