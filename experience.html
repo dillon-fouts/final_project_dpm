@@ -26,34 +26,48 @@
      <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png"> 
     </head>
 
-</head>
-<body>
-    <header>
-        <h1>Dillon Fouts</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Embedding the resume PDF -->
-    <embed src="static/Dillon-Fouts-Resume.pdf" type="application/pdf" width="100%" height="1000px" />
+    <body>
+        <header>
+            <h1>Dillon Fouts</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
     
-    <footer>
-        <div class="contact-info">
-            <a href="mailto:foutsfinances@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/dillon-fouts/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/dillon-fouts" target="_blank"><i class="fab fa-github"></i></a>
+        <!-- Embedding the resume PDF -->
+        <embed src="static/Dillon-Fouts-Resume.pdf" type="application/pdf" width="100%" height="1000px" class="pdf-viewer" />
+    
+        <!-- Button for mobile devices -->
+        <div class="mobile-button" style="display: none; text-align: center;">
+            <button onclick="window.open('static/Dillon-Fouts-Resume.pdf')" style="padding: 10px 20px; font-size: 16px; margin-top: 20px;">View Resume</button>
         </div>
-        <div class="legal-links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-and-conditions.html">Terms & Conditions</a>
-            <a href="cookie-policy.html">Cookie Policy</a>
-        </div>
-        <p>Content © Dillon Fouts 2024</p>
-    </footer>
-</body>
-</html>
+    
+        <footer>
+            <div class="contact-info">
+                <a href="mailto:foutsfinances@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/dillon-fouts/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dillon-fouts" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="legal-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <p>Content © Dillon Fouts 2024</p>
+        </footer>
+        <style>
+            /* CSS for mobile button */
+            @media screen and (max-width: 768px) {
+                .pdf-viewer {
+                    display: none;
+                }
+                .mobile-button {
+                    display: block;
+                }
+            }
+        </style>
+    </body>
 
